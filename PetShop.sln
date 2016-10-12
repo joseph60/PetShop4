@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60D66A2B-9417-40CE-9341-DB2650C475DD}"
 EndProject
@@ -59,6 +59,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{C9FA3C31-3F
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "2327"
 		VWDDynamicPort = "false"
+		SlnRelativePath = "Web\"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICacheDependency", "ICacheDependency\ICacheDependency.csproj", "{428952C8-5E61-4048-B3FF-07602C335477}"
@@ -90,6 +91,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership", "Membership\Membership.csproj", "{1E0AC510-91FE-46BF-9D4E-D4E9F55DE10B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableCacheDependency", "TableCacheDependency\TableCacheDependency.csproj", "{F55AB6DD-E0DC-4966-8E6A-B89E161C964F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralService", "GeneralService\GeneralService.csproj", "{E1338A12-A099-4D34-8711-47AB7A66A0FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +324,18 @@ Global
 		{F55AB6DD-E0DC-4966-8E6A-B89E161C964F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F55AB6DD-E0DC-4966-8E6A-B89E161C964F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F55AB6DD-E0DC-4966-8E6A-B89E161C964F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Debug|.NET.Build.0 = Debug|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Release|.NET.ActiveCfg = Release|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Release|.NET.Build.0 = Release|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E1338A12-A099-4D34-8711-47AB7A66A0FF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

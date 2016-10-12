@@ -142,6 +142,7 @@
     <Compile Include="Product.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="General.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PetShop.snk" />

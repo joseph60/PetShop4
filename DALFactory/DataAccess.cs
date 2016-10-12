@@ -40,5 +40,11 @@ namespace PetShop.DALFactory {
             return (PetShop.IDAL.IProduct)Assembly.Load(path).CreateInstance(className);
         }
 
+        public static PetShop.IDAL.IGeneral CreateGeneral()
+        {
+            string className = path + ".General";
+            return (PetShop.IDAL.IGeneral)Assembly.Load(path).CreateInstance(className);
+        }
+
     }
 }
