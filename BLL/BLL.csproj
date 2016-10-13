@@ -90,6 +90,7 @@
       <Name>System</Name>
     </Reference>
     <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
@@ -142,7 +143,7 @@
     <Compile Include="Product.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="General.cs" />
+    <Compile Include="GeneralQuery.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PetShop.snk" />

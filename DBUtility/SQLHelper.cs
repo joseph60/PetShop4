@@ -19,7 +19,7 @@ namespace PetShop.DBUtility {
     public abstract class SqlHelper {
 
         //Database connection strings
-        public static readonly string ConnectionStringLocalTransaction = ConfigurationManager.ConnectionStrings["SQLConnString1"].ConnectionString;
+        public static readonly string ConnectionStringLocalTransaction = ConfigurationManager.ConnectionStrings["SQLConnStringLocal"].ConnectionString;
         public static readonly string ConnectionStringInventoryDistributedTransaction = ConfigurationManager.ConnectionStrings["SQLConnString2"].ConnectionString;
         public static readonly string ConnectionStringOrderDistributedTransaction = ConfigurationManager.ConnectionStrings["SQLConnString3"].ConnectionString;
 		public static readonly string ConnectionStringProfile = ConfigurationManager.ConnectionStrings["SQLProfileConnString"].ConnectionString;		

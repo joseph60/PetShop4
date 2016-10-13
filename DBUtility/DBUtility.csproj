@@ -63,7 +63,4 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.OracleClient" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
 </Project>

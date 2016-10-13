@@ -40,10 +40,10 @@ namespace PetShop.DALFactory {
             return (PetShop.IDAL.IProduct)Assembly.Load(path).CreateInstance(className);
         }
 
-        public static PetShop.IDAL.IGeneral CreateGeneral()
+        public static PetShop.IDAL.IGeneralQuery CreateGeneral()
         {
-            string className = path + ".General";
-            return (PetShop.IDAL.IGeneral)Assembly.Load(path).CreateInstance(className);
+            string className = path + ".GeneralQuery";
+            return (PetShop.IDAL.IGeneralQuery)Assembly.Load(path).CreateInstance(className);
         }
 
     }

@@ -106,15 +106,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="General.asmx" />
+    <Content Include="GeneralQuery.asmx" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="General.asmx.cs">
-      <DependentUpon>General.asmx</DependentUpon>
+    <Compile Include="GeneralQuery.asmx.cs">
+      <DependentUpon>GeneralQuery.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
@@ -122,6 +122,26 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{ae805124-3d88-4ae5-a1e7-5a5a595a298e}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{fbae3210-40a6-44d3-acef-5881d8f4a6cd}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{87b51a22-242c-4fd8-ab60-a12160eec06a}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IBllStrategy\IBLLStrategy.csproj">
+      <Project>{6b8e3d04-ccbd-45f6-9a8e-14682102a4a4}</Project>
+      <Name>IBLLStrategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{e1445288-68f8-4556-a82e-25cfe6b30195}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServer\SQLServerDAL.csproj">
+      <Project>{9aa6b962-0628-4c0d-a4ea-54a244c32136}</Project>
+      <Name>SQLServerDAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
