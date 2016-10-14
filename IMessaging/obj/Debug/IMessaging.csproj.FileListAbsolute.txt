@@ -1,0 +1,7 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\bin\Debug\PetShop.IMessaging.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\bin\Debug\PetShop.IMessaging.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\bin\Debug\PetShop.Model.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\bin\Debug\PetShop.Model.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\obj\Debug\IMessaging.csprojResolveAssemblyReference.cache
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\obj\Debug\PetShop.IMessaging.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IMessaging\obj\Debug\PetShop.IMessaging.pdb

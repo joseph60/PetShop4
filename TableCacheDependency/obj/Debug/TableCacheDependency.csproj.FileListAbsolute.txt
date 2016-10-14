@@ -1,0 +1,7 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\bin\Debug\PetShop.TableCacheDependency.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\bin\Debug\PetShop.TableCacheDependency.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\bin\Debug\PetShop.ICacheDependency.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\bin\Debug\PetShop.ICacheDependency.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\obj\Debug\TableCacheDependency.csprojResolveAssemblyReference.cache
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\obj\Debug\PetShop.TableCacheDependency.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\TableCacheDependency\obj\Debug\PetShop.TableCacheDependency.pdb

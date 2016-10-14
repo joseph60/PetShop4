@@ -1,0 +1,7 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\bin\Debug\PetShop.IBLLStrategy.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\bin\Debug\PetShop.IBLLStrategy.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\bin\Debug\PetShop.Model.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\bin\Debug\PetShop.Model.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\obj\Debug\IBLLStrategy.csprojResolveAssemblyReference.cache
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\obj\Debug\PetShop.IBLLStrategy.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IBllStrategy\obj\Debug\PetShop.IBLLStrategy.pdb

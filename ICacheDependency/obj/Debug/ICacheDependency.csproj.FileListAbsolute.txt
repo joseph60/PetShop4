@@ -1,0 +1,4 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\ICacheDependency\bin\Debug\PetShop.ICacheDependency.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\ICacheDependency\bin\Debug\PetShop.ICacheDependency.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\ICacheDependency\obj\Debug\PetShop.ICacheDependency.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\ICacheDependency\obj\Debug\PetShop.ICacheDependency.pdb

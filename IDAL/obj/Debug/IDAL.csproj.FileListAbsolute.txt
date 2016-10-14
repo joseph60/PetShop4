@@ -1,0 +1,7 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\bin\Debug\PetShop.IDAL.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\bin\Debug\PetShop.IDAL.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\bin\Debug\PetShop.Model.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\bin\Debug\PetShop.Model.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\obj\Debug\PetShop.IDAL.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IDAL\obj\Debug\PetShop.IDAL.pdb

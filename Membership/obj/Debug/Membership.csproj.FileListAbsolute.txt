@@ -1,0 +1,7 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\bin\Debug\PetShop.Membership.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\bin\Debug\PetShop.Membership.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\bin\Debug\PetShop.DBUtility.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\bin\Debug\PetShop.DBUtility.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\obj\Debug\Membership.csprojResolveAssemblyReference.cache
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\obj\Debug\PetShop.Membership.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\Membership\obj\Debug\PetShop.Membership.pdb

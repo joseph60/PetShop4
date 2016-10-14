@@ -1,0 +1,4 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\Model\bin\Debug\PetShop.Model.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\Model\bin\Debug\PetShop.Model.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\Model\obj\Debug\PetShop.Model.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\Model\obj\Debug\PetShop.Model.pdb

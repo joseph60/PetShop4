@@ -5,7 +5,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Reflection;
-using System.Web.Script.Serialization;
+//using System.Web.Script.Serialization;
 
 namespace PetShop.SQLServerDAL
 {

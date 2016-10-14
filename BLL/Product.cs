@@ -29,6 +29,20 @@ namespace PetShop.BLL {
 		}
 
         /// <summary>
+		/// A method to retrieve products by category name
+		/// </summary>
+		/// <param name="category">The category name to search by</param>	
+		/// <returns>A Generic List of ProductInfo</returns>
+		public IList<ProductInfo> GetAllProducts()
+        {
+
+           
+
+            // Run a search against the data store
+            return dal.GetAllProducts();
+        }
+
+        /// <summary>
         /// A method to search products by keywords
         /// </summary>
         /// <param name="text">A list keywords delimited by a space</param>

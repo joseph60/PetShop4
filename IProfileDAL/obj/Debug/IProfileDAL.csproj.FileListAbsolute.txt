@@ -1,0 +1,7 @@
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\bin\Debug\PetShop.IProfileDAL.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\bin\Debug\PetShop.IProfileDAL.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\bin\Debug\PetShop.Model.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\bin\Debug\PetShop.Model.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\obj\Debug\PetShop.IProfileDAL.dll
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\obj\Debug\PetShop.IProfileDAL.pdb
+E:\Work\GITHUB\.NET Pet Shop 4.0\IProfileDAL\obj\Debug\IProfileDAL.csprojResolveAssemblyReference.cache

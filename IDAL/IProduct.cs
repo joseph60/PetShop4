@@ -14,13 +14,20 @@ namespace PetShop.IDAL{
 		/// </summary>
 		/// <param name="category">Name of the category to search by</param>
         /// <returns>Interface to Model Collection Generic of search results</returns>
-		IList<ProductInfo> GetProductsByCategory(string category);	
+		IList<ProductInfo> GetProductsByCategory(string category);
 
-		/// <summary>
-		/// Method to search products by a set of keyword
-		/// </summary>
-		/// <param name="keywords">An array of keywords to search by</param>
-		/// <returns>Interface to Model Collection Generic of search results</returns>
+        /// <summary>
+        /// Method to search products by category name
+        /// </summary>
+        /// <param name="category">Name of the category to search by</param>
+        /// <returns>Interface to Model Collection Generic of search results</returns>
+        IList<ProductInfo> GetAllProducts();
+
+        /// <summary>
+        /// Method to search products by a set of keyword
+        /// </summary>
+        /// <param name="keywords">An array of keywords to search by</param>
+        /// <returns>Interface to Model Collection Generic of search results</returns>
         IList<ProductInfo> GetProductsBySearch(string[] keywords);
 
 		/// <summary>

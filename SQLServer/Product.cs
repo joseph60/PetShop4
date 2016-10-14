@@ -12,6 +12,7 @@ namespace PetShop.SQLServerDAL {
     public class Product : IProduct {
 
         //Static constants
+        private const string SQL_SELECT_PRODUCTS = "SELECT * FROM Product";
         private const string SQL_SELECT_PRODUCTS_BY_CATEGORY = "SELECT Product.ProductId, Product.Name, Product.Descn, Product.Image, Product.CategoryId FROM Product WHERE Product.CategoryId = @Category";
         private const string SQL_SELECT_PRODUCTS_BY_SEARCH1 = "SELECT ProductId, Name, Descn, Product.Image, Product.CategoryId FROM Product WHERE ((";
         private const string SQL_SELECT_PRODUCTS_BY_SEARCH2 = "LOWER(Name) LIKE '%' + {0} + '%' OR LOWER(CategoryId) LIKE '%' + {0} + '%'";
@@ -38,6 +39,31 @@ namespace PetShop.SQLServerDAL {
             using (SqlDataReader rdr = SqlHelper.ExecuteReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, SQL_SELECT_PRODUCTS_BY_CATEGORY, parm)) {
                 while (rdr.Read()) {
                     ProductInfo product = new ProductInfo(rdr.GetString(0), rdr.GetString(1), rdr.GetString(2), rdr.GetString(3), rdr.GetString(4));
+                    productsByCategory.Add(product);
+                }
+            }
+
+            return productsByCategory;
+        }
+
+        /// <summary>
+        /// Query for products by category
+        /// </summary>
+        /// <param name="category">category name</param>  
+        /// <returns>A Generic List of ProductInfo</returns>
+        public IList<ProductInfo> GetAllProducts()
+        {
+
+            IList<ProductInfo> productsByCategory = new List<ProductInfo>();
+
+            
+
+            //Execute a query to read the products
+            using (SqlDataReader rdr = SqlHelper.ExecuteReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, SQL_SELECT_PRODUCTS))
+            {
+                while (rdr.Read())
+                {
+                    ProductInfo product = new ProductInfo(rdr.GetGuid(0).ToString(), rdr.GetString(1), rdr.GetString(2), rdr.GetBoolean(3).ToString(),"www");
                     productsByCategory.Add(product);
                 }
             }
