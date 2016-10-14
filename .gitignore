@@ -3,3 +3,6 @@
 ################################################################################
 
 /GeneralService/obj/Debug
+/BLL/obj/Debug
+/DBUtility/obj/Debug
+/GeneralService/scripts

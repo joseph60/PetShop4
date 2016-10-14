@@ -4,6 +4,7 @@ using System.Text;
 using PetShop.Model;
 using PetShop.IDAL;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace PetShop.BLL
 {
@@ -42,6 +43,24 @@ namespace PetShop.BLL
                 ret = dal.GetString(APPID, FUNCID, Params);
             }
             return ret;
+
+        }
+
+        /// <summary>
+        /// 根据APPID，查询条件查询并返回相应数据集
+        /// </summary>
+        /// <param name="APPID">根据此ID确定需要执行的查询操作：SP，SQL</param>
+        /// <param name="Params">查询参数</param>
+        /// <returns></returns>
+        public DataSet GetDataSet(int APPID, int FUNCID, SqlParameter[] Params)
+        {
+            DataSet ds = new DataSet();
+
+            if (APPID > 0 && FUNCID > 0)
+            {
+                ds = dal.GetDataSet(APPID, FUNCID, Params);
+            }
+            return ds;
 
         }
     }

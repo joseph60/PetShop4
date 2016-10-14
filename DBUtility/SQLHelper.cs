@@ -153,6 +153,35 @@ namespace PetShop.DBUtility {
         }
 
         /// <summary>
+        /// 查询并返回数据集 
+        /// using the provided parameters.
+        /// </summary>
+        /// <remarks>
+        /// e.g.:  
+        ///  Object obj = ExecuteQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+        /// </remarks>
+        /// <param name="connectionString">a valid connection string for a SqlConnection</param>
+        /// <param name="commandType">the CommandType (stored procedure, text, etc.)</param>
+        /// <param name="commandText">the stored procedure name or T-SQL command</param>
+        /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
+        /// <returns>An object that should be converted to the expected type using Convert.To{Type}</returns>
+        public static DataSet ExecuteQuery(string connectionString, CommandType cmdType, string cmdText, SqlParameter[] commandParameters)
+        {
+            SqlCommand cmd = new SqlCommand();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                DataSet ds = new DataSet();
+                PrepareCommand(cmd, connection, null, cmdType, cmdText, commandParameters);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(ds);
+
+                cmd.Parameters.Clear();
+                return ds;
+            }
+            
+        }
+
+        /// <summary>
         /// Execute a SqlCommand that returns the first column of the first record against an existing database connection 
         /// using the provided parameters.
         /// </summary>

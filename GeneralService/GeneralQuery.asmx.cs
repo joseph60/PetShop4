@@ -6,6 +6,7 @@ using System.Web.Services;
 using PetShop.BLL;
 using System.Web.UI;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace GeneralService
 {
@@ -72,9 +73,7 @@ namespace GeneralService
             IList<SqlParameter> Parameters = PrepareParameters(Params);
             PetShop.BLL.GeneralQuery gen = new PetShop.BLL.GeneralQuery();
             string strRet = gen.GetString(APPID, FUNCID, Parameters.ToArray());
-
-
-
+            //Context.Response.Write(strRet);
 
             return strRet;
         }
@@ -87,17 +86,20 @@ namespace GeneralService
         /// 返回结果，以Json格式封装
         /// </returns>
         [WebMethod]
-        public string GetDataSet(int APPID, int FUNCID, string Params)
+        public DataSet GetDataSet(int APPID, int FUNCID, string Params)
         {
             if ( APPID == 0) throw new ArgumentException("必须指定APPID");
             if ( FUNCID == 0) throw new ArgumentException("必须指定FUNCID"); 
 
 
             IList<SqlParameter> Parameters = PrepareParameters(Params);
+            PetShop.BLL.GeneralQuery gen = new PetShop.BLL.GeneralQuery();
+            return gen.GetDataSet(APPID, FUNCID, Parameters.ToArray());
 
 
 
-            return "Hello World";
+
+
         }
     }
 }

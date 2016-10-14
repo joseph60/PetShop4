@@ -63,13 +63,32 @@ namespace PetShop.SQLServerDAL
                 Assembly ass = Assembly.LoadFrom(qi.ConnectionString);
                 Type type = ass.GetType(qi.TypeName);
                 Object obj = Activator.CreateInstance(type);
-                MethodInfo mi = type.GetMethod(qi.SQL, new System.Type[] { typeof( System.String) });
+                MethodInfo mi = type.GetMethod(qi.SQL, new System.Type[] { typeof(System.String) });
                 object[] args = new object[1];
-                args[0] = 500;
-                strRet = (string)mi.Invoke(obj, args); 
+                args[0] = Params[0].Value;
+                strRet = (string)mi.Invoke(obj, args);
             }
-                
+
             return strRet;
+        }
+
+        private DataSet GetDataSet(QueryInfo qi, SqlParameter[] Params)
+        {
+            DataSet ds = new DataSet();
+            if (qi.DBTYPE == "1") //通过GeneralQuery直接访问数据库
+                ds = SqlHelper.ExecuteQuery(qi.ConnectionString, qi.ScriptType, qi.SQL, Params);
+            else if (qi.DBTYPE == "2") //通过加载dll实现
+            {
+                Assembly ass = Assembly.LoadFrom(qi.ConnectionString);
+                Type type = ass.GetType(qi.TypeName);
+                Object obj = Activator.CreateInstance(type);
+                MethodInfo mi = type.GetMethod(qi.SQL, new System.Type[] { typeof(System.String) });
+                object[] args = new object[1];
+                args[0] = Params[0].Value;
+                ds = (DataSet)mi.Invoke(obj, args);
+            }
+
+            return ds;
         }
         public string GetString(int APPID, int FUNCID, SqlParameter[] Params)
         {
@@ -84,11 +103,11 @@ namespace PetShop.SQLServerDAL
             return strRet;
         }
 
-        public string GetDataSet(int APPID, int FUNCID, SqlParameter[] Params)
+        public DataSet GetDataSet(int APPID, int FUNCID, SqlParameter[] Params)
         {
             QueryInfo qi = GetQueryInfo(APPID, FUNCID);
 
-            throw new NotImplementedException();
+            return GetDataSet(qi, Params);
         }
     }
 }

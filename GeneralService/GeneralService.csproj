@@ -107,11 +107,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneralQuery.asmx" />
+    <Content Include="Products.asmx" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Products.asmx.cs">
+      <DependentUpon>Products.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GeneralQuery.asmx.cs">
       <DependentUpon>GeneralQuery.asmx</DependentUpon>
